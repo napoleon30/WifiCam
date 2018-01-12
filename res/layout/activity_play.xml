@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true" >
+
+    <cn.sharelink.view.RtspVideoView
+        android:id="@+id/rtsp_videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/layout_menu" />
+
+    <RelativeLayout
+        android:id="@+id/layoutView_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/ll_model1"
+            layout="@layout/model1layout" />
+
+        <include
+            android:id="@+id/ll_model2"
+            layout="@layout/model2layout" />
+
+        <include
+            android:id="@+id/ll_model3"
+            layout="@layout/model3layout" />
+
+        <include
+            android:id="@+id/ll_model4"
+            layout="@layout/model4layout" />
+
+        <include
+            android:id="@+id/ll_model5"
+            layout="@layout/model5layout" />
+
+        <include
+            android:id="@+id/ll_model6"
+            layout="@layout/model6layout" />
+    </RelativeLayout>
+
+</FrameLayout>

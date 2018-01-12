@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_model4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+    <cn.sharelink.view.RockerView 
+        android:id="@+id/rockerview_model4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:background="@drawable/bg_model_square"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ibtn_mode4_up"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/mode_up" />
+
+            <ImageButton
+                android:id="@+id/ibtn_mode4_down"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mode_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ibtn_mode4_left"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/mode_left" />
+
+            <ImageButton
+                android:id="@+id/ibtn_mode4_right"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/mode_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

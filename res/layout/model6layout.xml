@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res/cn.sharelink.wificam"
+    android:id="@+id/ll_model6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_total"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/plus" />
+
+        <Button
+            android:id="@+id/btn_one_start"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu12_bg" />
+
+        <Button
+            android:id="@+id/btn_one_land"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu09_bg" />
+
+        <Button
+            android:id="@+id/btn_one_stop"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu13_bg" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_one_highlimit"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            myview:background="@drawable/menu17_bg"
+            myview:isbutton="false" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_one_nohead"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            myview:background="@drawable/menu16_bg"
+            myview:isbutton="false" />
+
+        <Button
+            android:id="@+id/btn_one_doroll"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu14_bg" />
+
+        <Button
+            android:id="@+id/btn_one_balance"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu15_bg" />
+    </LinearLayout>
+
+    <cn.sharelink.view.RockerView
+        android:id="@+id/model6_rocker_left"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        myview:position_y="-1"
+        myview:recover_y="false" />
+
+    <cn.sharelink.view.RockerView
+        android:id="@+id/model6_rocker_right"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton"
+            android:text="1"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton"
+            android:text="2"
+            android:layout_marginLeft="8dp"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+             android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton"
+            android:text="3"
+            android:textSize="25sp" />
+        
+        <RadioButton
+            android:id="@+id/radio3"
+             android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton"
+            android:text="4"
+            android:textSize="25sp" />
+        
+        
+    </RadioGroup>
+
+</RelativeLayout>

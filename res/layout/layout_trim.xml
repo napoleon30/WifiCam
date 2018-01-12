@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutView_trim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<cn.sharelink.view.TrimView 
+        android:id="@+id/trimview0"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        myview:orientation="false" />
+    
+    <cn.sharelink.view.TrimView 
+        android:id="@+id/trimview1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/trimview3" />
+
+    <cn.sharelink.view.TrimView 
+        android:id="@+id/trimview2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trimview3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp" />
+
+
+    <cn.sharelink.view.TrimView 
+        android:id="@+id/trimview3"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        myview:orientation="false" />
+
+</RelativeLayout>

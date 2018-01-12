@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutView_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu00_bg"
+            myview:isbutton="true"
+            myview:text="@string/exit" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_snapshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu01_bg"
+            myview:isbutton="true"
+            myview:text="@string/snapshot" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu02_bg"
+            myview:isbutton="false"
+            myview:text="@string/record" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_sdRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu03_bg"
+            myview:isbutton="false"
+            myview:text="@string/sd_record" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_playback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu04_bg"
+            myview:isbutton="true"
+            myview:text="@string/playback" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_speedChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu05_0"
+            myview:background1="@drawable/menu05_1"
+            myview:background2="@drawable/menu05_2"
+            myview:isbutton="true"
+            myview:isthreebg="true"
+            myview:text="@string/speed" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_gravity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu06_bg"
+            myview:isbutton="false"
+            myview:text="@string/gravity" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_offControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu07_bg"
+            myview:isbutton="false"
+            myview:text="@string/on_off" />
+        
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_auto_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu12_hidden_bg"
+            myview:isbutton="false"
+            myview:text="@string/auto_action" />
+
+        <cn.sharelink.view.MenuButton
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            myview:background="@drawable/menu10_bg"
+            myview:isbutton="true"
+            myview:text="@string/setting" />
+    </LinearLayout>
+
+</RelativeLayout>
